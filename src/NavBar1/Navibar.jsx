@@ -3,7 +3,7 @@ import './btn.css'
 import GuestAuthOptions from './GuestAuthOptions.jsx';
 import Hamburger from './Hamburger.jsx';
 import { Link } from 'react-router-dom';
-import { logo, link_menupage, link_authpage, link_loginpage, link_iconpage } from './datalist.jsx';
+import { logo, link_menupage, link_authpage, link_loginpage, link_iconpage, link_searchimage } from './datalist.jsx';
 
 export function Navibar() {
     return (
@@ -42,9 +42,11 @@ export function Navibar() {
                 </div>
                 <div className="center">
                     <form className="search">
-                        <Link to="/">
-                            <img src="/NavBar1/home-icon.png"></img>
-                        </Link>
+                        {link_searchimage.map((item) => (
+                            <Link to={item.url} key={item.id}>
+                                <img img={item.img_url}></img>
+                            </Link>
+                        ))}
                         <input type="text" placeholder="Search..." />
                         <button type="submit">
                             <i className="fas fa-search"></i>

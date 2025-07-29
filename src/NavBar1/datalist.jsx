@@ -1,5 +1,5 @@
 export const logo = [
-    { id: 'logo', name: 'logo', url: '/', img_url: '/NavBar1/logo-icon.png' },
+    { id: 'logo', name: 'logo', url: '/', img_url: './NavBar1/logo-icon.png' },
 ]
 
 export const link_menupage = [
@@ -20,7 +20,11 @@ export const link_loginpage = [
 ]
 
 export const link_iconpage = [
-    { id: 'messenger', name: '메신저', url: '/', img_url: '/NavBar1/메신저-icon.png' },
-    { id: 'notification', name: '알림', url: '/', img_url: '/NavBar1/알림-icon.png' },
-    { id: 'cart', name: '장바구니', url: '/', img_url: '/NavBar1/장바구니-icon.png' }
+    { id: 'messenger', name: '메신저', url: '/', img_url: './NavBar1/메신저-icon.png' },
+    { id: 'notification', name: '알림', url: '/', img_url: './NavBar1/알림-icon.png' },
+    { id: 'cart', name: '장바구니', url: '/', img_url: './NavBar1/장바구니-icon.png' }
 ];
+
+export const link_searchimage = [
+    { id: 'home', name: '홈', url: '/', img_url: './NavBar1/home-icon.png' },
+]
