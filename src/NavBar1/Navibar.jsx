@@ -44,7 +44,7 @@ export function Navibar() {
                     <form className="search">
                         {link_searchimage.map((item) => (
                             <Link to={item.url} key={item.id}>
-                                <img img={item.img_url}></img>
+                                <img src={item.img_url}></img>
                             </Link>
                         ))}
                         <input type="text" placeholder="Search..." />
