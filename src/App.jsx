@@ -2,9 +2,6 @@ import './App.css'
 import DarkMode from './DarkMode/DarkMode.jsx'
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Home } from './Home/Home.jsx';
-import { isMobile } from 'react-device-detect';
-
-
 function HomePage() {
     return (
         <>
@@ -15,7 +12,7 @@ function HomePage() {
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/navicollection.github.io">
             <div className="darkmode">
                 <DarkMode />
             </div>
