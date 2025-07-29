@@ -12,7 +12,7 @@ function HomePage() {
 
 function App() {
     return (
-        <HashRouter basename="/navicollection.github.io">
+        <HashRouter>
             <div className="darkmode">
                 <DarkMode />
             </div>
