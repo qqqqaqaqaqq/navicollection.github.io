@@ -1,0 +1,41 @@
+.nav-collection {
+    position: static;
+    width: clamp(1400px, 100%, 1500px);
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.button-collection {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    gap : 30px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+    .button-collection button {
+        width: 150px;
+        height: 80px;
+        color: inherit;
+        background-color: inherit;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 20px;
+        border: none;
+        box-shadow: 1px 1px 5px 1px rgb(128, 128, 128);
+        will-change: transform;
+    }
+
+        .button-collection button:hover {
+            transform: scale(1.05);
+            transition: transform 0.1s ease;
+        }
+
+        .button-collection button:active {
+            transform: scale(1.0);
+            transition: transform 0.1s ease;
+        }

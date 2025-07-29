@@ -1,0 +1,22 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+@media(max-width:1400px)
+{
+    body {
+        justify-content:flex-start;
+    }
+}
+.darkmode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
