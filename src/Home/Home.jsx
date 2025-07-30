@@ -1,7 +1,7 @@
 import './Home.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Navibar } from '../NavBar1/Navibar.jsx';
-
+import { isMobile } from 'react-device-detect';
 function RenderComponent({ toggle }) {
     switch (toggle) {
         case "0":
@@ -13,9 +13,19 @@ function RenderComponent({ toggle }) {
     }
 }
 
-
 export function Home() {
     const [toggle, settoggle] = useState("");
+    const [MobileMode] = useState(() => {
+        const saved = sessionStorage.getItem('isMobile');
+        return saved !== null ? saved === 'true' : isMobile;
+    });
+
+    console.log(MobileMode);
+    useEffect(() => {
+        if (MobileMode === true) {
+            import('./HomeMobile.css');
+        }
+    }, [MobileMode])
 
     return (
         <>

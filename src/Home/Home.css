@@ -12,7 +12,7 @@
     width: 1400px;
     display: flex;
     flex-direction: row;
-    gap : 30px;
+    gap: 30px;
     padding: 50px;
     box-sizing: border-box;
 }
@@ -39,13 +39,3 @@
             transform: scale(1.0);
             transition: transform 0.1s ease;
         }
-
-@media (max-width:768px) {
-    .nav-collection {
-        width: 100vw;
-    }
-
-    .button-collection {
-        width : 100%;
-    }
-}
