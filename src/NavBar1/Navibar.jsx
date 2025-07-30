@@ -1,11 +1,25 @@
-import './Navibar.css';
+﻿import './Navibar.css';
 import './btn.css'
 import GuestAuthOptions from './GuestAuthOptions.jsx';
 import Hamburger from './Hamburger.jsx';
 import { Link } from 'react-router-dom';
 import { logo, link_menupage, link_authpage, link_loginpage, link_iconpage, link_searchimage } from './datalist.jsx';
+import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
 export function Navibar() {
+    const [MobileMode] = useState(() => {
+        const saved = sessionStorage.getItem('isMobile');
+        return saved !== null ? saved=== 'true' : isMobile;
+    });
+
+    console.log(MobileMode);
+    useEffect(() => {
+        if (MobileMode === true) {
+            import('./MobileCSS.css');
+        }
+    }, [MobileMode])
+
     return (
         <div className="head">
             {/* 

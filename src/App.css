@@ -14,9 +14,11 @@ body {
         justify-content:flex-start;
     }
 }
-.darkmode {
+.setting {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 999;
+    display : flex;
+    flex-direction : column;
 }

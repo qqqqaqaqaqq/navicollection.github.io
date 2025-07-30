@@ -1,13 +1,14 @@
 .head {
     position: static;
     width: clamp(1400px, 100%, 1500px);
-    height: auto;
+    height: 250px;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     font-family: Arial, sans-serif;
     flex-direction: column;
+    z-index : 1000;
 }
 
 .navigate {
@@ -197,7 +198,7 @@
 
         .navigate .right .icon {
             width: 100%;
-            height: 20%;
+            height: auto;
             display: flex;
             flex-direction: row;
             gap: 5px;
@@ -232,34 +233,3 @@
             box-sizing: border-box;
         }
 
-@media (max-width:768px) {
-    .head {
-        width: 100%;
-    }
-
-    .navigate {
-        width: 100%;
-        gap: 1px;
-    }
-
-        .navigate .left {
-            width: 65px;
-            justify-content: flex-start;
-        }
-
-        .navigate .center {
-            flex : 1;
-            margin-top: 40px;
-        }
-
-        .navigate .right {
-            width: 10%;
-            justify-content: flex-start;
-        }
-
-        .navigate .left .logo,
-        .navigate .center .link,
-        .navigate .right .mini-dashborad {
-            display: none;
-        }
-}

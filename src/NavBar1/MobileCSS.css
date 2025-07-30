@@ -1,0 +1,46 @@
+
+.head {
+    position: sticky;
+    max-width: 100vw;
+    height: auto;
+    width: 100%;
+    will-change : auto;
+}
+
+    .head .navigate {
+        width: 100%;
+        padding: 5px;
+        margin-top: 0px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+        .head .navigate .left {
+            order: 1;
+            width: auto;
+            height: auto;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .head .navigate .center {
+            order: 3;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .head .navigate .right {
+            order: 2;
+            width: auto;
+            height: auto;
+            justify-content: center;
+            margin: 0;
+        }
+
+            .head .navigate .left .logo,
+            .head .navigate .center .link,
+            .head .navigate .right .mini-dashborad {
+                display: none;
+            }
